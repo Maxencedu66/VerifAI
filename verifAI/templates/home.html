@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .hero-section {
+            background-color: #007bff;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .file-upload-section {
+            margin-top: 50px;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+            color: #fff;
+        }
+        /* Animation clignotante pour les messages de succès et d'erreur */
+        .flash-success {
+            background-color: #28a745;
+            color: #fff;
+            animation: flash-green 1s infinite alternate;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .flash-error {
+            background-color: #dc3545;
+            color: #fff;
+            animation: flash-red 1s infinite alternate;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        @keyframes flash-green {
+            0% { background-color: #28a745; }
+            100% { background-color: #218838; }
+        }
+        @keyframes flash-red {
+            0% { background-color: #dc3545; }
+            100% { background-color: #c82333; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">{{ title }}</h1>
+            <p class="lead">Votre solution pour analyser la virologie des fichiers.</p>
+        </div>
+    </div>
+
+    <!-- Flash Message Section -->
+    <div class="container mt-3">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert mt-3 flash-{{ category }}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <!-- File Upload Section -->
+    <div class="container file-upload-section">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center">Soumettez votre fichier .exe pour analyse</h2>
+                <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="fileInput" class="form-label">Choisissez un fichier .exe :</label>
+                        <input type="file" class="form-control" id="fileInput" name="file" accept=".exe" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-custom">Analyser le fichier</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

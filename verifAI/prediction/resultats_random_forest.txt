@@ -1,0 +1,39 @@
+Total files analyzed: 32
+Average processing time: 1.9102 seconds
+Maximum processing time: 15.9662 seconds
+Minimum processing time: 0.1185 seconds
+Accuracy: 81.25%
+
+Detailed Results:
+  SlackSetup.exe: SAFE (95.06%)
+  FileZilla_3.68.1_win64_sponsored2-setup.exe: SAFE (85.42%)
+  chess.exe: SAFE (60.61%)
+  aa517b23bfb842c12171fc0be4f7d4771255b99cf18abece5c79a62c5e467985: MALWARE (74.81%)
+  aa524fd30e1fc1f81e86ef6b4051fa680d084b078ac69bcb103e65bbb1dd90e5: SAFE (73.96%)
+  ccleaner.exe: SAFE (89.34%)
+  aa5d3b29d4e2f8c328ffb1de804cea2a08aa095ba629d71723e4fc01abdb5ab3: SAFE (83.44%)
+  c199401b05c962701aff0ffeaaf6b972ba766dabe39a473a787ace0abe9a52e3: SAFE (74.10%)
+  a1bcd2683c01742570325a0d67104d8e83a905cbf37f812973d349ba9ca24517: MALWARE (75.32%)
+  aa53b9d39268bfe931085ce96dd409528fd1a25b2b054dd5e9338db71070df20: SAFE (72.77%)
+  ChromeSetup.exe: SAFE (89.63%)
+  067f3c2ef2718f90efce08be4dfcc012afb78a02f4f1870017118435f68564b9: MALWARE (55.46%)
+  NordVPNSetup.exe: MALWARE (56.68%)
+  a1b9c15cdc688427c296a09bbd7f9c53e0c0633a2abfaa5ad7c35b0c01e4903f: MALWARE (71.33%)
+  be996ac9a6cfded613ad5a32d67b731a92e1c30fd20b0039f630a2c4748f7aaf: MALWARE (85.27%)
+  Skype-8.132.0.201.exe: SAFE (93.08%)
+  0676a3242eb3abddc943036ec9c4b71243185b5b4aa652a138ed55b5e8c855f2: MALWARE (77.28%)
+  7zip.exe: SAFE (59.21%)
+  06721dc1e0c6e01a5a9ff366461682829b655f36e7ae6294b273ed95452cc9ab: MALWARE (70.92%)
+  aa51a7acd8228d46d40fdb28efe4717833a9254cdf84dfd2711fcd9f7e07887f: MALWARE (82.45%)
+  aa582236624cb5b504e786161c0208d9d03daaef892439dcda20b4dc90ecef07: MALWARE (61.98%)
+  aa5c87646bd36b8dca6f3cee16bcdcedfcdf8478ed64d64147c6a7c8946f08ae: MALWARE (83.78%)
+  000ce31be63f91ed6c50555fd0b3a14bda772eae717241a9d897c2f561fbaff4: SAFE (81.94%)
+  Bitwarden-Installer-2024.11.1.exe: SAFE (63.51%)
+  c190a7ec04776f540ded881879e06f5df4f7c69d0ab7a5576ab16efdb648d1ef: MALWARE (77.93%)
+  winrar-x64-701.exe: SAFE (89.98%)
+  adobearm.exe: SAFE (75.99%)
+  audacity-win-3.7.0-64bit.exe: SAFE (71.06%)
+  5958dc681827c592c4818eccf297e65e00ec7b5b842fc8487d883d6f47465297: MALWARE (71.14%)
+  aa57882f52ff4ce1f882625a0b75ab0597787b60693a346a3dd77a3a790fdb34: MALWARE (81.17%)
+  OBS-Studio-30.2.3-Windows-Installer.exe: SAFE (93.24%)
+  firefox.exe: SAFE (67.35%)

@@ -1,0 +1,6 @@
+#Construction de l'image
+sudo docker run -it ember-env
+
+# Lancer le docker
+sudo docker cp /chemin/vers/fichier.exe <container_id>:/app/executable/
+
