@@ -26,7 +26,7 @@ except Exception as e:
 # Route principale
 @app.route("/")
 def home():
-    return render_template("home.html", title="VirusLeBoss")
+    return render_template("home.html", title="VerifAI")
 
 
 # Route pour gérer l'upload de fichier et analyse
