@@ -35,6 +35,16 @@
 - **Rapport détaillé** : Résultats enregistrés dans un fichier texte avec les statistiques globales et les prédictions.
 
 ---
+## Captures d'écran
+
+### 1. Page d'accueil
+![Page d'accueil](verifAI/screenshots/home_page.png "Page d'accueil de VerifAI")
+
+### 2. Analyse d'un fichier
+![Analyse d'un fichier](verifAI/screenshots/safe.png "Résultat de l'analyse d'un fichier safe")
+![Analyse d'un fichier](verifAI/screenshots/virus.png "Résultat de l'analyse d'un fichier malveillant")
+
+---
 
 ## Pré-requis
 
@@ -61,7 +71,7 @@ Accédez au notebook ici : [Notebook Kaggle - VerifAI](https://www.kaggle.com/co
 ## 1. Construire et Lancer le Conteneur Docker
 ```bash
 docker build -t verifai .
-docker run -it -p 5454:5454 verifai
+docker run -it verifai
 ```
 ### 2. Lancer l’Application
 Dans le conteneur Docker, exécutez :
